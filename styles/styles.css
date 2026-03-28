@@ -1,3 +1,76 @@
+/* --- Events Page Specific Styles --- */
+.event-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 2.5rem;
+    justify-content: center;
+}
+
+.event-card {
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    min-width: 260px;
+    max-width: 320px;
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 5px solid var(--accent);
+    transition: transform 0.2s;
+}
+
+.event-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.13);
+}
+
+.event-card h3 {
+    margin-top: 0;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.event-date {
+    font-weight: bold;
+    color: var(--secondary);
+    margin-bottom: 0.2rem;
+}
+
+.event-club {
+    font-size: 0.98rem;
+    color: var(--primary);
+    margin-bottom: 0.7rem;
+}
+
+@media (max-width: 900px) {
+    .event-card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .event-card {
+        width: 95%;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 600px) {
+    .event-card-container {
+        padding: 0 0.5rem;
+    }
+
+    .event-card {
+        padding: 1.2rem 0.7rem 1rem 0.7rem;
+        font-size: 0.98rem;
+    }
+}
+
+
+
 /* --- Join Page Specific Styles (scoped in media query) --- */
 @media (max-width: 9000px) {
     .join-form-container {
@@ -221,14 +294,14 @@ footer a {
     border-radius: 10px;
     padding: 1.6rem;
     background: var(--white);
-    box-shadow: 0 3px 11px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.08);
     border-top: 5px solid var(--accent);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .club-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.14);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
 }
 
 .club-card h3 {
@@ -241,7 +314,7 @@ footer a {
     background: var(--white);
     padding: 1.4rem;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .club-benefits ul {
