@@ -208,3 +208,61 @@ footer a {
     color: var(--accent);
     text-decoration: none;
 }
+
+/* --- Club Page Styles --- */
+.club-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.club-card {
+    border-radius: 10px;
+    padding: 1.6rem;
+    background: var(--white);
+    box-shadow: 0 3px 11px rgba(0,0,0,0.08);
+    border-top: 5px solid var(--accent);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.club-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.14);
+}
+
+.club-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.7rem;
+}
+
+.club-benefits {
+    margin-top: 2.5rem;
+    background: var(--white);
+    padding: 1.4rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.club-benefits ul {
+    padding-left: 1rem;
+    margin: 0.8rem 0 0 0;
+}
+
+.club-benefits li {
+    margin-bottom: 0.6rem;
+}
+
+@media (max-width: 900px) {
+    .club-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 3.5rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+}
